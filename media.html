@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Media — Sylvain Catherine</title>
+<meta name="description" content="Editorials, interviews, and press coverage featuring Sylvain Catherine's research.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#FBFAF7;--paper-2:#F3F1EA;--ink:#181A1D;--muted:#585C63;
+    --line:#E2DED4;--accent:#1F3A5F;--accent-soft:#2f5687;--maxw:1080px;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{margin:0;background:var(--paper);color:var(--ink);
+    font-family:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+    font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased;}
+  h1,h2,h3{font-family:"Fraunces",Georgia,serif;font-weight:500;line-height:1.12;letter-spacing:-0.01em;}
+  a{color:var(--accent);text-decoration:none;}
+  a:hover{color:var(--accent-soft);}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 32px;}
+
+  header.site{border-bottom:1px solid var(--line);background:rgba(251,250,247,0.85);
+    backdrop-filter:saturate(1.2) blur(6px);position:sticky;top:0;z-index:20;}
+  .masthead{display:flex;align-items:baseline;justify-content:space-between;gap:24px;
+    padding:20px 32px;max-width:var(--maxw);margin:0 auto;flex-wrap:wrap;}
+  .brand{font-family:"Fraunces",serif;font-size:22px;font-weight:600;letter-spacing:-0.01em;color:var(--ink);}
+  .brand span{color:var(--accent);}
+  nav.main{display:flex;gap:28px;flex-wrap:wrap;}
+  nav.main a{font-size:14px;color:var(--muted);text-transform:uppercase;letter-spacing:0.08em;
+    font-weight:500;padding-bottom:2px;border-bottom:1.5px solid transparent;transition:.2s;}
+  nav.main a:hover,nav.main a.active{color:var(--ink);border-color:var(--accent);}
+
+  .page-hero{padding:72px 0 44px;border-bottom:1px solid var(--line);}
+  .eyebrow{text-transform:uppercase;letter-spacing:0.18em;font-size:12.5px;font-weight:600;color:var(--accent);margin:0 0 16px;}
+  .page-hero h1{font-size:clamp(34px,5vw,54px);margin:0 0 18px;}
+  .page-hero p.sub{color:var(--muted);max-width:62ch;font-size:18px;margin:0;}
+
+  section.block{padding:20px 0 10px;}
+  .block-title{font-size:clamp(24px,3vw,32px);margin:52px 0 6px;}
+  .cat{font-family:"Fraunces",serif;font-size:14px;text-transform:uppercase;letter-spacing:0.12em;
+    color:var(--accent);border-bottom:1px solid var(--line);padding-bottom:9px;margin:34px 0 4px;}
+  ul.med{list-style:none;padding:0;margin:0;}
+  ul.med li{padding:15px 0;border-bottom:1px solid var(--line);display:grid;grid-template-columns:1fr auto;gap:20px;align-items:baseline;}
+  ul.med li:last-child{border-bottom:none;}
+  ul.med .t{color:var(--ink);font-size:16.5px;line-height:1.4;}
+  ul.med .t a{color:var(--ink);}
+  ul.med .t a:hover{color:var(--accent);}
+  ul.med .o{color:var(--muted);font-size:14px;text-align:right;white-space:nowrap;}
+  ul.med .o .outlet{font-style:italic;}
+  ul.med .o .date{display:block;font-size:12.5px;color:#8a8f98;margin-top:2px;}
+
+  footer.site{background:var(--ink);color:#cfd2d8;padding:60px 0 40px;margin-top:40px;}
+  footer .f-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:40px;}
+  footer h4{color:#fff;font-family:"Fraunces",serif;font-weight:500;font-size:20px;margin:0 0 8px;}
+  footer p{color:#9aa0ab;font-size:15px;margin:0 0 6px;max-width:34ch;}
+  footer a{color:#cfd2d8;}
+  footer a:hover{color:#fff;}
+  footer .f-links{display:flex;flex-direction:column;gap:8px;font-size:15px;}
+  footer .f-links .lbl{text-transform:uppercase;letter-spacing:0.12em;font-size:11.5px;color:#767c88;margin-bottom:4px;}
+  .colophon{border-top:1px solid #2c2f36;margin-top:48px;padding-top:22px;font-size:13px;color:#767c88;}
+
+  @media(max-width:720px){
+    ul.med li{grid-template-columns:1fr;gap:4px;}
+    ul.med .o{text-align:left;white-space:normal;}
+    footer .f-grid{grid-template-columns:1fr;gap:28px;}
+  }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="masthead">
+    <div class="brand">Sylvain <span>Catherine</span></div>
+    <nav class="main">
+      <a href="index.html">Home</a>
+      <a href="working-papers.html">Working Papers</a>
+      <a href="publications.html">Publications</a>
+      <a href="media.html" class="active">Media</a>
+      <a href="https://www.dropbox.com/s/u1otvs0z51hktkp/CV.pdf?dl=0" target="_blank" rel="noopener">CV</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="page-hero">
+    <div class="wrap">
+      <p class="eyebrow">In the press</p>
+      <h1>Media</h1>
+      <p class="sub">Editorials and interviews, and a selection of press coverage of my research.</p>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="wrap">
+      <h2 class="block-title">Editorials &amp; Interviews</h2>
+
+      <div class="cat">In English</div>
+      <ul class="med">
+        <li>
+          <div class="t"><a href="https://www.washingtonpost.com/outlook/2020/12/28/student-loan-forgiveness-repayment-income-regressive/" target="_blank" rel="noopener">The best way to forgive student debt is to focus on those who need it most</a></div>
+          <div class="o"><span class="outlet">The Washington Post</span><span class="date">Dec 28, 2020</span></div>
+        </li>
+        <li>
+          <div class="t"><a href="https://thehill.com/opinion/education/3545917-canceling-student-debt-for-everyone-is-bad-policy-and-bad-economics/" target="_blank" rel="noopener">Canceling student debt for everyone is bad policy and bad economics</a></div>
+          <div class="o"><span class="outlet">The Hill</span><span class="date">Jul 5, 2022</span></div>
+        </li>
+        <li>
+          <div class="t"><a href="https://promarket.org/2020/04/16/inequality-has-increased-far-less-than-you-think-if-you-consider-social-security-benefits/" target="_blank" rel="noopener">Inequality Has Increased Far Less Than You Think (If You Consider Social Security Benefits)</a></div>
+          <div class="o"><span class="outlet">ProMarket</span><span class="date">Apr 16, 2020</span></div>
+        </li>
+      </ul>
+
+      <div class="cat">En Français</div>
+      <ul class="med">
+        <li><div class="t">Trump, une chance historique pour réformer le travail en France</div><div class="o"><span class="outlet">Les Echos</span><span class="date">Jan 2026</span></div></li>
+        <li><div class="t">Le mirage de la taxe Zucman face au décrochage économique français</div><div class="o"><span class="outlet">Le Point</span><span class="date">Sep 12, 2025</span></div></li>
+        <li><div class="t">À un moment, ça casse</div><div class="o"><span class="outlet">Les Echos</span><span class="date">Aug 29, 2025</span></div></li>
+        <li><div class="t">La dépense publique est de plus en plus captée par les retraites</div><div class="o"><span class="outlet">L'Express</span><span class="date">Jul 15, 2025</span></div></li>
+        <li><div class="t">Doit-on repenser le financement de notre modèle social ?</div><div class="o"><span class="outlet">France Culture</span><span class="date">Jun 6, 2025</span></div></li>
+        <li><div class="t">Le niveau actuel des pensions des retraités est trop élevé</div><div class="o"><span class="outlet">Les Echos</span><span class="date">Apr 19, 2025</span></div></li>
+        <li><div class="t">Que toucheraient les retraités si la réforme de 1982 avait introduit une part de capitalisation ?</div><div class="o"><span class="outlet">FigaroVox</span><span class="date">Jan 31, 2025</span></div></li>
+        <li><div class="t">François Bayrou a bien fait de ne pas suspendre la réforme des retraites</div><div class="o"><span class="outlet">Le Point</span><span class="date">Jan 14, 2025</span></div></li>
+        <li><div class="t">Le poids des retraites menace la croissance</div><div class="o"><span class="outlet">La Tribune</span><span class="date">Jan 4, 2025</span></div></li>
+        <li><div class="t">L'abandon de la réforme des retraites traduirait l'incapacité du pays à regarder la vérité en face</div><div class="o"><span class="outlet">Le Figaro</span><span class="date">Oct 25, 2024</span></div></li>
+        <li><div class="t">Les pensions de retraite, ou l'angle mort du débat sur les finances publiques</div><div class="o"><span class="outlet">FigaroVox</span><span class="date">Mar 29, 2024</span></div></li>
+        <li><div class="t">Osons affronter la question du smic</div><div class="o"><span class="outlet">Le Figaro</span><span class="date">Apr 3, 2015</span></div></li>
+        <li><div class="t">La France aurait-elle dissimulé la montée des inégalités salariales sous le tapis du chômage ?</div><div class="o"><span class="outlet">Atlantico</span><span class="date">Feb 13, 2015</span></div></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="wrap">
+      <h2 class="block-title">Press Coverage of Research</h2>
+
+      <div class="cat">The distributional effects of student loan forgiveness</div>
+      <ul class="med">
+        <li><div class="t">Canceling student loan debt could benefit wealthy Americans the most <span style="color:var(--muted)">— Megan Henney</span></div><div class="o"><span class="outlet">Fox Business</span><span class="date">Dec 1, 2020</span></div></li>
+        <li><div class="t">Progressives Love Regressive Biden Loan Scam <span style="color:var(--muted)">— James Freeman</span></div><div class="o"><span class="outlet">The Wall Street Journal</span><span class="date">Oct 3, 2022</span></div></li>
+        <li><div class="t">Biden Student Loan Forgiveness Is Less Help For Pell Grant Recipients Than Expected <span style="color:var(--muted)">— Erik Sherman</span></div><div class="o"><span class="outlet">Forbes</span><span class="date">Sep 29, 2022</span></div></li>
+        <li><div class="t">Biden's About to Make a Big Mistake on Student Loans <span style="color:var(--muted)">— K. Abraham &amp; M. Strain</span></div><div class="o"><span class="outlet">Politico</span><span class="date">May 31, 2022</span></div></li>
+        <li><div class="t">Is student loan cancellation progressive or regressive? It doesn't really matter <span style="color:var(--muted)">— Beth Akers</span></div><div class="o"><span class="outlet">The Hill</span><span class="date">Jun 24, 2021</span></div></li>
+        <li><div class="t">Democratic plan to forgive student loans could raise tuition and hurt those at the bottom <span style="color:var(--muted)">— Lindsey Burke</span></div><div class="o"><span class="outlet">NBC News</span><span class="date">Feb 19, 2021</span></div></li>
+        <li><div class="t">Cancel student debt? Better solutions exist <span style="color:var(--muted)">— Sen. Bill Cassidy</span></div><div class="o"><span class="outlet">Fox News</span><span class="date">Feb 16, 2021</span></div></li>
+        <li><div class="t">The Great Student Loan Scam <span style="color:var(--muted)">— Editorial Board</span></div><div class="o"><span class="outlet">The Wall Street Journal</span><span class="date">Feb 9, 2021</span></div></li>
+        <li><div class="t">Student-Debt Cancellation Stands Its Best Chance Yet. But Would It Advance Social Justice? <span style="color:var(--muted)">— Kelly Field</span></div><div class="o"><span class="outlet">Chronicle of Higher Education</span><span class="date">Jan 14, 2021</span></div></li>
+        <li><div class="t">A New Year's goal for progressives: Stop advocating bailouts for rich people <span style="color:var(--muted)">— Catherine Rampell</span></div><div class="o"><span class="outlet">The Washington Post</span><span class="date">Dec 31, 2020</span></div></li>
+        <li><div class="t">Jill on Money: Who benefits from student loan forgiveness? It's complicated <span style="color:var(--muted)">— Jill Schlesinger</span></div><div class="o"><span class="outlet">Chicago Tribune</span><span class="date">Dec 31, 2020</span></div></li>
+        <li><div class="t">The latest question in the debate over student debt forgiveness: How valuable is it? <span style="color:var(--muted)">— Jillian Berman</span></div><div class="o"><span class="outlet">MarketWatch</span><span class="date">Dec 18, 2020</span></div></li>
+        <li><div class="t">Income-Driven Repayment Provides a Way to Offer Student Loan Forgiveness to Those Who Need It the Most <span style="color:var(--muted)">— Constantine Yannelis</span></div><div class="o"><span class="outlet">ProMarket</span><span class="date">Dec 17, 2020</span></div></li>
+        <li><div class="t">Should Biden cancel student loan debt? | Pro/Con <span style="color:var(--muted)">— Amselem &amp; Bishop</span></div><div class="o"><span class="outlet">The Inquirer</span><span class="date">Dec 7, 2020</span></div></li>
+        <li><div class="t">Biden's plan to forgive student debt could have limited economic benefits, and carry risks <span style="color:var(--muted)">— Jeff Cox</span></div><div class="o"><span class="outlet">CNBC</span><span class="date">Dec 6, 2020</span></div></li>
+        <li><div class="t">Cancel Student Loans Would Benefit This Group More Than Anyone Else <span style="color:var(--muted)">— Zack Friedman</span></div><div class="o"><span class="outlet">Forbes</span><span class="date">Dec 3, 2020</span></div></li>
+        <li><div class="t">Forgiving student loans the wrong way will only worsen inequality <span style="color:var(--muted)">— The Post's View</span></div><div class="o"><span class="outlet">The Washington Post</span><span class="date">Dec 3, 2020</span></div></li>
+        <li><div class="t">'Just a Start' <span style="color:var(--muted)">— James Freeman</span></div><div class="o"><span class="outlet">The Wall Street Journal</span><span class="date">Dec 1, 2020</span></div></li>
+      </ul>
+
+      <div class="cat">Social Security and Trends in Wealth Inequality</div>
+      <ul class="med">
+        <li><div class="t">A Distorted View of Wealth Inequality <span style="color:var(--muted)">— Editorial Board</span></div><div class="o"><span class="outlet">The Wall Street Journal</span><span class="date">Jul 30, 2021</span></div></li>
+        <li><div class="t">Have the top 0.1% of Americans made out like bandits since 2000? <span style="color:var(--muted)">— Callum Williams</span></div><div class="o"><span class="outlet">The Economist</span><span class="date">May 7, 2020</span></div></li>
+      </ul>
+
+      <div class="cat">Marché du travail : la grande fracture</div>
+      <ul class="med">
+        <li><div class="t">Faut-il toucher au Smic ? <span style="color:var(--muted)">— Marc Vignaud</span></div><div class="o"><span class="outlet">Le Point</span><span class="date">Mar 16, 2015</span></div></li>
+        <li><div class="t">L'Éducation nationale, plus que jamais fabrique à chômeurs ? <span style="color:var(--muted)">— Fanny Guinochet</span></div><div class="o"><span class="outlet">L'Opinion</span><span class="date">Feb 12, 2015</span></div></li>
+        <li><div class="t">Un marché du travail très inégalitaire en France <span style="color:var(--muted)">— Cécile Crouzel</span></div><div class="o"><span class="outlet">Le Figaro</span><span class="date">Mar 11, 2015</span></div></li>
+        <li><div class="t">Les mauvais choix français conduisent à l'inégalité par le chômage <span style="color:var(--muted)">— A. Landier &amp; D. Thesmar</span></div><div class="o"><span class="outlet">Le Monde</span><span class="date">Feb 24, 2015</span></div></li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <h4>Sylvain Catherine</h4>
+        <p>Associate Professor of Finance, The Wharton School, University of Pennsylvania.</p>
+      </div>
+      <div class="f-links">
+        <span class="lbl">Site</span>
+        <a href="working-papers.html">Working Papers</a>
+        <a href="publications.html">Publications</a>
+        <a href="media.html">Media</a>
+        <a href="https://www.dropbox.com/s/u1otvs0z51hktkp/CV.pdf?dl=0" target="_blank" rel="noopener">CV (PDF)</a>
+      </div>
+      <div class="f-links">
+        <span class="lbl">Contact</span>
+        <a href="#">Email (add address)</a>
+        <a href="#">Google Scholar</a>
+        <a href="#">SSRN</a>
+      </div>
+    </div>
+    <div class="colophon">© 2026 Sylvain Catherine · Draft design for review</div>
+  </div>
+</footer>
+
+</body>
+</html>

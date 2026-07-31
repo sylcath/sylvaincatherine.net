@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Publications — Sylvain Catherine</title>
+<meta name="description" content="Peer-reviewed publications by Sylvain Catherine, Associate Professor of Finance at The Wharton School.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#FBFAF7;--paper-2:#F3F1EA;--ink:#181A1D;--muted:#585C63;
+    --line:#E2DED4;--accent:#1F3A5F;--accent-soft:#2f5687;--maxw:1080px;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{margin:0;background:var(--paper);color:var(--ink);
+    font-family:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+    font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased;}
+  h1,h2,h3{font-family:"Fraunces",Georgia,serif;font-weight:500;line-height:1.12;letter-spacing:-0.01em;}
+  a{color:var(--accent);text-decoration:none;}
+  a:hover{color:var(--accent-soft);}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 32px;}
+
+  header.site{border-bottom:1px solid var(--line);background:rgba(251,250,247,0.85);
+    backdrop-filter:saturate(1.2) blur(6px);position:sticky;top:0;z-index:20;}
+  .masthead{display:flex;align-items:baseline;justify-content:space-between;gap:24px;
+    padding:20px 32px;max-width:var(--maxw);margin:0 auto;flex-wrap:wrap;}
+  .brand{font-family:"Fraunces",serif;font-size:22px;font-weight:600;letter-spacing:-0.01em;color:var(--ink);}
+  .brand span{color:var(--accent);}
+  nav.main{display:flex;gap:28px;flex-wrap:wrap;}
+  nav.main a{font-size:14px;color:var(--muted);text-transform:uppercase;letter-spacing:0.08em;
+    font-weight:500;padding-bottom:2px;border-bottom:1.5px solid transparent;transition:.2s;}
+  nav.main a:hover,nav.main a.active{color:var(--ink);border-color:var(--accent);}
+
+  .page-hero{padding:72px 0 44px;border-bottom:1px solid var(--line);}
+  .eyebrow{text-transform:uppercase;letter-spacing:0.18em;font-size:12.5px;font-weight:600;color:var(--accent);margin:0 0 16px;}
+  .page-hero h1{font-size:clamp(34px,5vw,54px);margin:0 0 18px;}
+  .page-hero p.sub{color:var(--muted);max-width:62ch;font-size:18px;margin:0;}
+
+  .group-head{font-family:"Fraunces",serif;font-size:15px;text-transform:uppercase;letter-spacing:0.12em;
+    color:var(--accent);border-bottom:1px solid var(--line);padding-bottom:10px;margin:56px 0 4px;}
+
+  .entries{padding:8px 0 40px;}
+  .entry{display:grid;grid-template-columns:52px 1fr;gap:26px;align-items:start;
+    padding:38px 0;border-bottom:1px solid var(--line);}
+  .entry:last-child{border-bottom:none;}
+  .entry .yr{font-family:"Fraunces",serif;font-size:19px;color:var(--accent);padding-top:2px;}
+  .entry .body h3{font-size:21px;margin:0 0 8px;}
+  .entry .body h3 a{color:var(--ink);}
+  .entry .body h3 a:hover{color:var(--accent);}
+  .authors{color:var(--ink);font-size:15px;margin:0 0 4px;}
+  .authors a{font-weight:500;border-bottom:1px solid rgba(31,58,95,0.28);}
+  .authors a:hover{border-color:var(--accent);}
+  .jrnl{color:var(--muted);font-style:italic;font-size:15px;margin:0 0 10px;}
+  .abstract{color:var(--muted);font-size:15.5px;margin:0 0 12px;max-width:72ch;}
+  .badges{margin-top:2px;}
+  .badge{display:inline-block;background:#f7f0e3;border:1px solid #e6d8c2;color:#8a5416;
+    font-size:12px;font-weight:600;padding:3px 10px;border-radius:2px;margin:0 6px 6px 0;letter-spacing:.02em;}
+  .links{margin-top:8px;}
+  .links a{font-size:13.5px;font-weight:600;margin-right:18px;}
+  .links a::after{content:" →";font-weight:400;}
+
+  /* large, readable inline figure */
+  figure.fig{margin:20px 0 0;max-width:680px;}
+  figure.fig img{width:100%;height:auto;display:block;border:1px solid var(--line);
+    border-radius:4px;background:#fff;cursor:zoom-in;transition:box-shadow .15s;}
+  figure.fig img:hover{box-shadow:0 6px 22px rgba(24,26,29,.16);}
+  figure.fig figcaption{font-size:12px;color:#9297a0;margin-top:7px;letter-spacing:.02em;}
+  .video{position:relative;max-width:680px;margin:20px 0 0;aspect-ratio:16/9;}
+  .video iframe{position:absolute;inset:0;width:100%;height:100%;border:1px solid var(--line);border-radius:4px;}
+
+  .lightbox{position:fixed;inset:0;background:rgba(15,16,18,.92);display:none;align-items:center;
+    justify-content:center;z-index:100;padding:32px;cursor:zoom-out;}
+  .lightbox.open{display:flex;}
+  .lightbox img{max-width:94vw;max-height:90vh;box-shadow:0 12px 48px rgba(0,0,0,.55);
+    border-radius:3px;background:#fff;cursor:default;}
+  .lightbox .close{position:absolute;top:14px;right:28px;color:#fff;font-size:40px;line-height:1;cursor:pointer;}
+
+  footer.site{background:var(--ink);color:#cfd2d8;padding:60px 0 40px;margin-top:20px;}
+  footer .f-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:40px;}
+  footer h4{color:#fff;font-family:"Fraunces",serif;font-weight:500;font-size:20px;margin:0 0 8px;}
+  footer p{color:#9aa0ab;font-size:15px;margin:0 0 6px;max-width:34ch;}
+  footer a{color:#cfd2d8;}
+  footer a:hover{color:#fff;}
+  footer .f-links{display:flex;flex-direction:column;gap:8px;font-size:15px;}
+  footer .f-links .lbl{text-transform:uppercase;letter-spacing:0.12em;font-size:11.5px;color:#767c88;margin-bottom:4px;}
+  .colophon{border-top:1px solid #2c2f36;margin-top:48px;padding-top:22px;font-size:13px;color:#767c88;}
+
+  @media(max-width:720px){
+    .entry{grid-template-columns:1fr;gap:8px;}
+    footer .f-grid{grid-template-columns:1fr;gap:28px;}
+  }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="masthead">
+    <div class="brand">Sylvain <span>Catherine</span></div>
+    <nav class="main">
+      <a href="index.html">Home</a>
+      <a href="working-papers.html">Working Papers</a>
+      <a href="publications.html" class="active">Publications</a>
+      <a href="media.html">Media</a>
+      <a href="https://www.dropbox.com/s/u1otvs0z51hktkp/CV.pdf?dl=0" target="_blank" rel="noopener">CV</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="page-hero">
+    <div class="wrap">
+      <p class="eyebrow">Research</p>
+      <h1>Publications</h1>
+      <p class="sub">Peer-reviewed articles in finance and economics, with book chapters and other scholarly work.</p>
+    </div>
+  </section>
+
+  <section class="entries">
+    <div class="wrap">
+      <div class="group-head">Peer-Reviewed Publications</div>
+
+      <article class="entry">
+        <div class="yr">2026</div>
+        <div class="body">
+          <h3><a href="https://www.dropbox.com/scl/fi/8fcwnq5xcux99jca1vkm4/CLP.pdf?rlkey=5ko9v3rqxum0w9hd1kfuhiec6&dl=0" target="_blank" rel="noopener">A Dynamic Model of the Racial Wealth Gap</a></h3>
+          <p class="authors">with Ellen Lu and <a href="https://jamesparon.com" target="_blank" rel="noopener">James Paron</a></p>
+          <p class="jrnl">Review of Financial Studies, 2026</p>
+          <p class="abstract">Explores how disparities in economic factors explain differences in Black and White households' balance-sheet composition, finding that such factors account for roughly half the differential between the racial wealth and income gaps.</p>
+          <div class="links"><a href="https://www.dropbox.com/scl/fi/8fcwnq5xcux99jca1vkm4/CLP.pdf?rlkey=5ko9v3rqxum0w9hd1kfuhiec6&dl=0" target="_blank" rel="noopener">PDF</a><a href="https://www.dropbox.com/scl/fi/rpn9545lxo26serij7dmy/CLP_Appendix.pdf?rlkey=v7shshw75oemjrfuxn9ne8aeu&dl=0" target="_blank" rel="noopener">Appendix</a></div>
+          <figure class="fig"><img src="https://sylvaincatherine.net/wp-content/uploads/2025/07/image-2.png" alt="A Dynamic Model of the Racial Wealth Gap" loading="lazy"><figcaption>Click to enlarge</figcaption></figure>
+        </div>
+      </article>
+
+      <article class="entry">
+        <div class="yr">2026</div>
+        <div class="body">
+          <h3><a href="https://www.dropbox.com/scl/fi/fii4hpjjhxmdumerqslin/CEY.pdf?rlkey=qlvp06iuxffnu7lf3ohokz0d5&dl=0" target="_blank" rel="noopener">How Do Income-Driven Repayment Plans Benefit Student Debt Borrowers?</a></h3>
+          <p class="authors">with <a href="https://www.mehranebrahimian.com/" target="_blank" rel="noopener">Mehran Ebrahimian</a> and <a href="https://faculty.chicagobooth.edu/constantine-yannelis" target="_blank" rel="noopener">Constantine Yannelis</a></p>
+          <p class="jrnl">Journal of Financial Economics, 2026</p>
+          <p class="abstract">Shows that the expansion of income-driven repayment accounts for roughly half of the increase in student debt since 2010, and analyzes its consumption-smoothing and welfare effects.</p>
+          <div class="links"><a href="https://www.dropbox.com/scl/fi/fii4hpjjhxmdumerqslin/CEY.pdf?rlkey=qlvp06iuxffnu7lf3ohokz0d5&dl=0" target="_blank" rel="noopener">PDF</a></div>        </div>
+      </article>
+
+      <article class="entry">
+        <div class="yr">2025</div>
+        <div class="body">
+          <h3><a href="https://www.dropbox.com/scl/fi/syr1na0zlcscjezt6k3ak/CMS_JF.pdf?rlkey=rkvp6zcolfwqpfaf9xshi91gm&dl=0" target="_blank" rel="noopener">Social Security and Trends in Wealth Inequality</a></h3>
+          <p class="authors">with <a href="https://www.max-miller.finance/" target="_blank" rel="noopener">Max Miller</a> and <a href="https://sites.google.com/view/natashasarin/" target="_blank" rel="noopener">Natasha Sarin</a></p>
+          <p class="jrnl">Journal of Finance, 2025</p>
+          <div class="badges">
+            <span class="badge">Dimensional Fund Advisors Prize — First Prize (Journal of Finance)</span>
+            <span class="badge">Best Paper in Asset Pricing, SFS Cavalcade</span>
+            <span class="badge">Best Paper, Red Rock Finance Conference</span>
+            <span class="badge">Marshall Blume Prize in Financial Research</span>
+          </div>
+          <p class="abstract">Demonstrates that top wealth shares remain relatively stable over three decades once Social Security wealth is properly included in the measurement.</p>
+          <div class="links"><a href="https://www.dropbox.com/scl/fi/syr1na0zlcscjezt6k3ak/CMS_JF.pdf?rlkey=rkvp6zcolfwqpfaf9xshi91gm&dl=0" target="_blank" rel="noopener">PDF</a><a href="https://www.dropbox.com/scl/fi/2xrdhepmgjfv4rl8c2gd1/cms_internet_appendix.pdf?rlkey=q9bjhtujagbmzyybs58fnzxg6&dl=0" target="_blank" rel="noopener">Appendix</a><a href="https://doi.org/10.37214/jofdata.22" target="_blank" rel="noopener">Replication package</a></div>
+          <figure class="fig"><img src="https://sylvaincatherine.net/wp-content/uploads/2025/04/image-2.png" alt="Social Security and Trends in Wealth Inequality" loading="lazy"><figcaption>Click to enlarge</figcaption></figure>
+          <div class="video"><iframe src="https://www.youtube.com/embed/oY-cNpG5kaE" title="Social Security and Trends in Wealth Inequality — video" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+        </div>
+      </article>
+
+      <article class="entry">
+        <div class="yr">2024</div>
+        <div class="body">
+          <h3><a href="https://www.dropbox.com/scl/fi/m0rg53ojql64hmy7ib7ju/CountercyclicalRiskSweden.pdf?rlkey=zpdh73wdiil7rg52nhmlwjaia&dl=0" target="_blank" rel="noopener">Countercyclical Income Risk and Portfolio Choices: Evidence from Sweden</a></h3>
+          <p class="authors">with <a href="https://www.houseoffinance.se/paolo-sodini/" target="_blank" rel="noopener">Paolo Sodini</a> and <a href="https://yapeizhang.com/" target="_blank" rel="noopener">Yapei Zhang</a></p>
+          <p class="jrnl">Journal of Finance, 2024</p>
+          <div class="badges">
+            <span class="badge">Dimensional Fund Advisors Prize — Distinguished Paper (Journal of Finance)</span>
+          </div>
+          <p class="abstract">Documents how workers facing higher tail income risk during poor equity-market performance maintain lower portfolio equity shares.</p>
+          <div class="links"><a href="https://www.dropbox.com/scl/fi/m0rg53ojql64hmy7ib7ju/CountercyclicalRiskSweden.pdf?rlkey=zpdh73wdiil7rg52nhmlwjaia&dl=0" target="_blank" rel="noopener">PDF</a><a href="https://www.dropbox.com/scl/fi/2lzkqqgz3tjydv5x5x079/CSZ_internetappendix.pdf?rlkey=jncydyzzrssj751gg92nmq2zr&dl=0" target="_blank" rel="noopener">Appendix</a><a href="https://doi.org/10.37214/jofdata.20" target="_blank" rel="noopener">Replication code</a></div>
+          <figure class="fig"><img src="https://sylvaincatherine.net/wp-content/uploads/2020/07/websweden-1.png" alt="Countercyclical Income Risk and Portfolio Choices: Evidence from Sweden" loading="lazy"><figcaption>Click to enlarge</figcaption></figure>
+        </div>
+      </article>
+
+      <article class="entry">
+        <div class="yr">2023</div>
+        <div class="body">
+          <h3><a href="https://www.dropbox.com/s/kx4hjl8fd8i3l9p/Student%20Loan%20Forgiveness.pdf?dl=0" target="_blank" rel="noopener">The Distributional Effects of Student Loan Forgiveness</a></h3>
+          <p class="authors">with <a href="https://faculty.chicagobooth.edu/constantine-yannelis" target="_blank" rel="noopener">Constantine Yannelis</a></p>
+          <p class="jrnl">Journal of Financial Economics, 2023</p>
+          <p class="abstract">Shows that forgiveness policies disproportionately benefit higher earners and provide substantially smaller benefits to Black and Hispanic households.</p>
+          <div class="links"><a href="https://www.dropbox.com/s/kx4hjl8fd8i3l9p/Student%20Loan%20Forgiveness.pdf?dl=0" target="_blank" rel="noopener">PDF</a><a href="https://www.dropbox.com/scl/fi/lvx8069k6a399sfpchhfg/CY_internetappendix.pdf?rlkey=spy9tuiot7dwi6x5rh8utupls&dl=0" target="_blank" rel="noopener">Appendix</a><a href="https://data.mendeley.com/datasets/fbs5vyj6wt/1" target="_blank" rel="noopener">Replication package</a></div>
+          <figure class="fig"><img src="https://sylvaincatherine.net/wp-content/uploads/2025/04/image-3.png" alt="The Distributional Effects of Student Loan Forgiveness" loading="lazy"><figcaption>Click to enlarge</figcaption></figure>
+        </div>
+      </article>
+
+      <article class="entry">
+        <div class="yr">2022</div>
+        <div class="body">
+          <h3><a href="https://www.dropbox.com/s/ltqnzh5fvrf4kby/CollateralConstraints.pdf?dl=0" target="_blank" rel="noopener">Quantifying Reduced-Form Evidence on Collateral Constraints</a></h3>
+          <p class="authors">with <a href="https://sites.google.com/site/thomaschaney/" target="_blank" rel="noopener">Thomas Chaney</a>, Zongbo Huang, <a href="http://faculty.haas.berkeley.edu/dsraer/" target="_blank" rel="noopener">David Sraer</a> and <a href="https://sites.google.com/site/dthesmar/" target="_blank" rel="noopener">David Thesmar</a></p>
+          <p class="jrnl">Journal of Finance, 2022</p>
+          <p class="abstract">Estimates output losses of 7.1% and TFP misallocation losses of 1.4% arising from collateral constraints.</p>
+          <div class="links"><a href="https://www.dropbox.com/s/ltqnzh5fvrf4kby/CollateralConstraints.pdf?dl=0" target="_blank" rel="noopener">PDF</a></div>
+        </div>
+      </article>
+
+      <article class="entry">
+        <div class="yr">2022</div>
+        <div class="body">
+          <h3><a href="https://www.dropbox.com/s/4owd60p1cuvucxq/CounterCyclicalRisk.pdf?dl=0" target="_blank" rel="noopener">Countercyclical Labor Income Risk and Portfolio Choices over the Life Cycle</a></h3>
+          <p class="jrnl">Review of Financial Studies, 2022</p>
+          <div class="badges">
+            <span class="badge">Outstanding Paper — Jacobs Levy Center Research Paper Prize</span>
+          </div>
+          <p class="abstract">A structural life-cycle model examining how the skewness of income risk affects stock-market participation.</p>
+          <div class="links"><a href="https://www.dropbox.com/s/4owd60p1cuvucxq/CounterCyclicalRisk.pdf?dl=0" target="_blank" rel="noopener">PDF</a></div>
+          <figure class="fig"><img src="https://sylvaincatherine.net/wp-content/uploads/2025/04/image-4.png" alt="Countercyclical Labor Income Risk and Portfolio Choices over the Life Cycle" loading="lazy"><figcaption>Click to enlarge</figcaption></figure>
+        </div>
+      </article>
+
+      <article class="entry">
+        <div class="yr">2022</div>
+        <div class="body">
+          <h3><a href="https://www.dropbox.com/s/nwqdde6enivx8vx/KeepingOptionsOpen.pdf?dl=0" target="_blank" rel="noopener">Keeping Options Open: What Motivates Entrepreneurs?</a></h3>
+          <p class="jrnl">Journal of Financial Economics, 2022</p>
+          <div class="badges">
+            <span class="badge">Editor's Choice, April 2022</span>
+          </div>
+          <p class="abstract">Uses French administrative data to value the option of returning to employment for entrepreneurs, estimating this option to be worth 6.4× the average net wage.</p>
+          <div class="links"><a href="https://www.dropbox.com/s/nwqdde6enivx8vx/KeepingOptionsOpen.pdf?dl=0" target="_blank" rel="noopener">PDF</a></div>        </div>
+      </article>
+
+      <article class="entry">
+        <div class="yr">2020</div>
+        <div class="body">
+          <h3><a href="https://www.dropbox.com/s/181xdbt1v9voqfx/CMS_JPubE.pdf?dl=0" target="_blank" rel="noopener">Relaxing Household Liquidity Constraints through Social Security</a></h3>
+          <p class="authors">with <a href="https://www.max-miller.finance/" target="_blank" rel="noopener">Max Miller</a> and <a href="https://sites.google.com/view/natashasarin/" target="_blank" rel="noopener">Natasha Sarin</a></p>
+          <p class="jrnl">Journal of Public Economics, 2020</p>
+          <p class="abstract">Analyzes household cash shortfalls and evaluates early access to Social Security benefits against alternative pandemic-relief policies.</p>
+          <div class="links"><a href="https://www.dropbox.com/s/181xdbt1v9voqfx/CMS_JPubE.pdf?dl=0" target="_blank" rel="noopener">PDF</a></div>
+          <figure class="fig"><img src="https://sylvaincatherine.net/wp-content/uploads/2025/04/image-5.png" alt="Relaxing Household Liquidity Constraints through Social Security" loading="lazy"><figcaption>Click to enlarge</figcaption></figure>
+        </div>
+      </article>
+
+      <div class="group-head">Other Publications</div>
+
+      <article class="entry">
+        <div class="yr">2025</div>
+        <div class="body">
+          <h3><a href="https://www.dropbox.com/scl/fi/8tswgxxetrawaflx8l2yx/Social-Security-and-Racial-Wealth-Gap-Chapter-2025.pdf?rlkey=evbg1c8zb4228d48fh7k43mdr&dl=0" target="_blank" rel="noopener">Social Security and the Racial Wealth Gap</a></h3>
+          <p class="authors">with <a href="https://law.yale.edu/natasha-sarin" target="_blank" rel="noopener">Natasha Sarin</a></p>
+          <p class="jrnl">Chapter in Reducing Retirement Inequality: Building Wealth and Old-Age Resilience, Oxford University Press, 2025</p>
+          <p class="abstract">Examines how including Social Security wealth narrows measured racial wealth disparities over three decades.</p>
+          <div class="links"><a href="https://www.dropbox.com/scl/fi/8tswgxxetrawaflx8l2yx/Social-Security-and-Racial-Wealth-Gap-Chapter-2025.pdf?rlkey=evbg1c8zb4228d48fh7k43mdr&dl=0" target="_blank" rel="noopener">PDF</a></div>
+          <figure class="fig"><img src="https://sylvaincatherine.net/wp-content/uploads/2025/09/image.png" alt="Social Security and the Racial Wealth Gap" loading="lazy"><figcaption>Click to enlarge</figcaption></figure>
+        </div>
+      </article>
+
+      <article class="entry">
+        <div class="yr">2024</div>
+        <div class="body">
+          <h3><a href="https://www.dropbox.com/scl/fi/zh5g1asxkazg72b2043gw/shortdraft_mpc.pdf?rlkey=wddp0duxwggubwsjaqp8mmj5b&dl=0" target="_blank" rel="noopener">The Distributional Effects of Student Loan Forgiveness: An Update on SAVE and the Covid Moratorium</a></h3>
+          <p class="authors">with Mark Pérez Clanton and <a href="https://faculty.chicagobooth.edu/constantine-yannelis" target="_blank" rel="noopener">Constantine Yannelis</a></p>
+          <p class="jrnl">National Tax Journal, 2024</p>
+          <p class="abstract">Updates earlier research on student loan forgiveness, examining post-2020 policy developments.</p>
+          <div class="links"><a href="https://www.dropbox.com/scl/fi/zh5g1asxkazg72b2043gw/shortdraft_mpc.pdf?rlkey=wddp0duxwggubwsjaqp8mmj5b&dl=0" target="_blank" rel="noopener">PDF</a></div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <h4>Sylvain Catherine</h4>
+        <p>Associate Professor of Finance, The Wharton School, University of Pennsylvania.</p>
+      </div>
+      <div class="f-links">
+        <span class="lbl">Site</span>
+        <a href="working-papers.html">Working Papers</a>
+        <a href="publications.html">Publications</a>
+        <a href="media.html">Media</a>
+        <a href="https://www.dropbox.com/s/u1otvs0z51hktkp/CV.pdf?dl=0" target="_blank" rel="noopener">CV (PDF)</a>
+      </div>
+      <div class="f-links">
+        <span class="lbl">Contact</span>
+        <a href="#">Email (add address)</a>
+        <a href="#">Google Scholar</a>
+        <a href="#">SSRN</a>
+      </div>
+    </div>
+    <div class="colophon">© 2026 Sylvain Catherine · Draft design for review</div>
+  </div>
+</footer>
+
+<div class="lightbox" id="lightbox"><span class="close">&times;</span><img id="lbImg" src="" alt=""></div>
+<script>
+(function(){
+  var lb=document.getElementById('lightbox'), img=document.getElementById('lbImg');
+  document.querySelectorAll('figure.fig img').forEach(function(t){
+    t.addEventListener('click',function(){img.src=this.src;img.alt=this.alt;lb.classList.add('open');});
+  });
+  img.addEventListener('click',function(e){e.stopPropagation();});
+  function close(){lb.classList.remove('open');img.src='';}
+  lb.addEventListener('click',close);
+  document.addEventListener('keydown',function(e){if(e.key==='Escape')close();});
+})();
+</script>
+</body>
+</html>

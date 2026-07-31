@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Working Papers — Sylvain Catherine</title>
+<meta name="description" content="Working papers by Sylvain Catherine, Associate Professor of Finance at The Wharton School.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#FBFAF7;--paper-2:#F3F1EA;--ink:#181A1D;--muted:#585C63;
+    --line:#E2DED4;--accent:#1F3A5F;--accent-soft:#2f5687;--maxw:1080px;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{margin:0;background:var(--paper);color:var(--ink);
+    font-family:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+    font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased;}
+  h1,h2,h3{font-family:"Fraunces",Georgia,serif;font-weight:500;line-height:1.12;letter-spacing:-0.01em;}
+  a{color:var(--accent);text-decoration:none;}
+  a:hover{color:var(--accent-soft);}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 32px;}
+
+  header.site{border-bottom:1px solid var(--line);background:rgba(251,250,247,0.85);
+    backdrop-filter:saturate(1.2) blur(6px);position:sticky;top:0;z-index:20;}
+  .masthead{display:flex;align-items:baseline;justify-content:space-between;gap:24px;
+    padding:20px 32px;max-width:var(--maxw);margin:0 auto;flex-wrap:wrap;}
+  .brand{font-family:"Fraunces",serif;font-size:22px;font-weight:600;letter-spacing:-0.01em;color:var(--ink);}
+  .brand span{color:var(--accent);}
+  nav.main{display:flex;gap:28px;flex-wrap:wrap;}
+  nav.main a{font-size:14px;color:var(--muted);text-transform:uppercase;letter-spacing:0.08em;
+    font-weight:500;padding-bottom:2px;border-bottom:1.5px solid transparent;transition:.2s;}
+  nav.main a:hover,nav.main a.active{color:var(--ink);border-color:var(--accent);}
+
+  .page-hero{padding:72px 0 44px;border-bottom:1px solid var(--line);}
+  .eyebrow{text-transform:uppercase;letter-spacing:0.18em;font-size:12.5px;font-weight:600;color:var(--accent);margin:0 0 16px;}
+  .page-hero h1{font-size:clamp(34px,5vw,54px);margin:0 0 18px;}
+  .page-hero p.sub{color:var(--muted);max-width:62ch;font-size:18px;margin:0;}
+
+  .entries{padding:20px 0 60px;}
+  .entry{padding:38px 0;border-bottom:1px solid var(--line);}
+  .entry:last-child{border-bottom:none;}
+  .entry h3{font-size:23px;margin:0 0 10px;}
+  .entry h3 a{color:var(--ink);}
+  .entry h3 a:hover{color:var(--accent);}
+  .authors{color:var(--ink);font-size:15.5px;margin:0 0 10px;}
+  .authors a{font-weight:500;border-bottom:1px solid rgba(31,58,95,0.28);}
+  .authors a:hover{border-color:var(--accent);}
+  .abstract{color:var(--muted);font-size:16px;margin:0 0 14px;max-width:74ch;}
+  .badge.status{display:inline-block;background:#f7f0e3;border:1px solid #e6d8c2;color:#8a5416;
+    font-size:12px;font-weight:600;padding:3px 10px;border-radius:2px;margin:0 0 12px;letter-spacing:.02em;}
+  .links a{font-size:14px;font-weight:600;margin-right:20px;}
+  .links a::after{content:" →";font-weight:400;}
+
+  figure.fig{margin:20px 0 0;max-width:680px;}
+  figure.fig img{width:100%;height:auto;display:block;border:1px solid var(--line);
+    border-radius:4px;background:#fff;cursor:zoom-in;transition:box-shadow .15s;}
+  figure.fig img:hover{box-shadow:0 6px 22px rgba(24,26,29,.16);}
+  figure.fig figcaption{font-size:12px;color:#9297a0;margin-top:7px;letter-spacing:.02em;}
+
+  .lightbox{position:fixed;inset:0;background:rgba(15,16,18,.92);display:none;align-items:center;
+    justify-content:center;z-index:100;padding:32px;cursor:zoom-out;}
+  .lightbox.open{display:flex;}
+  .lightbox img{max-width:94vw;max-height:90vh;box-shadow:0 12px 48px rgba(0,0,0,.55);
+    border-radius:3px;background:#fff;cursor:default;}
+  .lightbox .close{position:absolute;top:14px;right:28px;color:#fff;font-size:40px;line-height:1;cursor:pointer;}
+
+  footer.site{background:var(--ink);color:#cfd2d8;padding:60px 0 40px;margin-top:20px;}
+  footer .f-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:40px;}
+  footer h4{color:#fff;font-family:"Fraunces",serif;font-weight:500;font-size:20px;margin:0 0 8px;}
+  footer p{color:#9aa0ab;font-size:15px;margin:0 0 6px;max-width:34ch;}
+  footer a{color:#cfd2d8;}
+  footer a:hover{color:#fff;}
+  footer .f-links{display:flex;flex-direction:column;gap:8px;font-size:15px;}
+  footer .f-links .lbl{text-transform:uppercase;letter-spacing:0.12em;font-size:11.5px;color:#767c88;margin-bottom:4px;}
+  .colophon{border-top:1px solid #2c2f36;margin-top:48px;padding-top:22px;font-size:13px;color:#767c88;}
+
+  @media(max-width:720px){footer .f-grid{grid-template-columns:1fr;gap:28px;}}
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="masthead">
+    <div class="brand">Sylvain <span>Catherine</span></div>
+    <nav class="main">
+      <a href="index.html">Home</a>
+      <a href="working-papers.html" class="active">Working Papers</a>
+      <a href="publications.html">Publications</a>
+      <a href="media.html">Media</a>
+      <a href="https://www.dropbox.com/s/u1otvs0z51hktkp/CV.pdf?dl=0" target="_blank" rel="noopener">CV</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="page-hero">
+    <div class="wrap">
+      <p class="eyebrow">Research</p>
+      <h1>Working Papers</h1>
+      <p class="sub">Work in progress and papers under review. Full PDFs are linked below.</p>
+    </div>
+  </section>
+
+  <section class="entries">
+    <div class="wrap">
+
+      <article class="entry">
+        <span class="badge status">Reject &amp; Resubmit · American Economic Review</span>
+        <h3><a href="https://www.dropbox.com/s/uflamzv0ii7tge0/CMPS.pdf?dl=0" target="_blank" rel="noopener">Who Gains When Interest Rates Fall?</a></h3>
+        <p class="authors">with <a href="https://www.max-miller.finance/" target="_blank" rel="noopener">Max Miller</a>, <a href="https://jamesparon.com/" target="_blank" rel="noopener">James Paron</a> and <a href="https://sites.google.com/view/natashasarin/" target="_blank" rel="noopener">Natasha Sarin</a></p>
+        <p class="abstract">Examines how household wealth responds to interest rate changes using a life-cycle model. Middle-aged and wealthier households hold more long-term assets, matching observed U.S. patterns. Declining rates boost wealth inequality while rising rates reduce it — though these effects are partly offset by changes in human capital and Social Security benefit valuations.</p>
+        <div class="links"><a href="https://www.dropbox.com/s/uflamzv0ii7tge0/CMPS.pdf?dl=0" target="_blank" rel="noopener">PDF</a></div>
+      </article>
+
+      <article class="entry">
+        <span class="badge status">Revise &amp; Resubmit · Journal of Finance</span>
+        <h3><a href="https://www.dropbox.com/scl/fi/1a7j3d0ua2tqxds8wfhe3/CEFST.pdf?rlkey=r8l9t8fnsfw292mz5r8dcdr3e&dl=0" target="_blank" rel="noopener">Robustness Checks in Structural Analysis</a></h3>
+        <p class="authors">with <a href="https://www.mehranebrahimian.com/" target="_blank" rel="noopener">Mehran Ebrahimian</a>, <a href="https://www.mohammadfereydounian.com/" target="_blank" rel="noopener">Mohammad Fereydounian</a>, <a href="https://www.davidsraer.com/" target="_blank" rel="noopener">David Sraer</a> and <a href="https://sites.google.com/site/dthesmar/" target="_blank" rel="noopener">David Thesmar</a></p>
+        <p class="abstract">An efficient computational method for estimating structural model variants, using approximations of the relationship between moments and parameters and requiring only sparse model discontinuities. Applications to corporate finance and portfolio choice models demonstrate its use for identification, robustness, and model misspecification.</p>
+        <div class="links"><a href="https://www.dropbox.com/scl/fi/1a7j3d0ua2tqxds8wfhe3/CEFST.pdf?rlkey=r8l9t8fnsfw292mz5r8dcdr3e&dl=0" target="_blank" rel="noopener">PDF</a></div>
+        <figure class="fig"><img src="https://sylvaincatherine.net/wp-content/uploads/2025/07/image-4.png" alt="Robustness Checks in Structural Analysis" loading="lazy"><figcaption>Click to enlarge</figcaption></figure>
+      </article>
+
+      <article class="entry">
+        <h3><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2564431" target="_blank" rel="noopener">Labor Market Risk and the Private Value of Social Security</a></h3>
+        <p class="abstract">Using a calibrated life-cycle model, quantifies how labor market risk reduces workers' private valuation of Social Security by roughly 46%. For workers under 30, the certainty-equivalent value is negative, with systematic risk exposure peaking later in the lifecycle.</p>
+        <div class="links"><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2564431" target="_blank" rel="noopener">SSRN</a></div>
+      </article>
+
+    </div>
+  </section>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <h4>Sylvain Catherine</h4>
+        <p>Associate Professor of Finance, The Wharton School, University of Pennsylvania.</p>
+      </div>
+      <div class="f-links">
+        <span class="lbl">Site</span>
+        <a href="working-papers.html">Working Papers</a>
+        <a href="publications.html">Publications</a>
+        <a href="media.html">Media</a>
+        <a href="https://www.dropbox.com/s/u1otvs0z51hktkp/CV.pdf?dl=0" target="_blank" rel="noopener">CV (PDF)</a>
+      </div>
+      <div class="f-links">
+        <span class="lbl">Contact</span>
+        <a href="#">Email (add address)</a>
+        <a href="#">Google Scholar</a>
+        <a href="#">SSRN</a>
+      </div>
+    </div>
+    <div class="colophon">© 2026 Sylvain Catherine · Draft design for review</div>
+  </div>
+</footer>
+
+<div class="lightbox" id="lightbox"><span class="close">&times;</span><img id="lbImg" src="" alt=""></div>
+<script>
+(function(){
+  var lb=document.getElementById('lightbox'), img=document.getElementById('lbImg');
+  document.querySelectorAll('figure.fig img').forEach(function(t){
+    t.addEventListener('click',function(){img.src=this.src;img.alt=this.alt;lb.classList.add('open');});
+  });
+  img.addEventListener('click',function(e){e.stopPropagation();});
+  function close(){lb.classList.remove('open');img.src='';}
+  lb.addEventListener('click',close);
+  document.addEventListener('keydown',function(e){if(e.key==='Escape')close();});
+})();
+</script>
+</body>
+</html>

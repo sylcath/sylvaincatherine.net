@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sylvain Catherine — Associate Professor of Finance, The Wharton School</title>
+<meta name="description" content="Sylvain Catherine is an economist and associate professor of finance at the Wharton School of the University of Pennsylvania. Research on household risk-taking, public policy, and inequality.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#FBFAF7;
+    --paper-2:#F3F1EA;
+    --ink:#181A1D;
+    --muted:#585C63;
+    --line:#E2DED4;
+    --accent:#1F3A5F;      /* deep navy */
+    --accent-soft:#2f5687;
+    --maxw:1080px;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+    font-size:17px;
+    line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3{font-family:"Fraunces",Georgia,"Times New Roman",serif;font-weight:500;line-height:1.1;letter-spacing:-0.01em;}
+  a{color:var(--accent);text-decoration:none;}
+  a:hover{color:var(--accent-soft);}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 32px;}
+
+  /* ---------- Masthead ---------- */
+  header.site{
+    border-bottom:1px solid var(--line);
+    background:rgba(251,250,247,0.85);
+    backdrop-filter:saturate(1.2) blur(6px);
+    position:sticky;top:0;z-index:20;
+  }
+  .masthead{
+    display:flex;align-items:baseline;justify-content:space-between;
+    gap:24px;padding:20px 32px;max-width:var(--maxw);margin:0 auto;flex-wrap:wrap;
+  }
+  .brand{font-family:"Fraunces",serif;font-size:22px;font-weight:600;letter-spacing:-0.01em;color:var(--ink);}
+  .brand span{color:var(--accent);}
+  nav.main{display:flex;gap:28px;flex-wrap:wrap;}
+  nav.main a{
+    font-size:14px;color:var(--muted);text-transform:uppercase;letter-spacing:0.08em;
+    font-weight:500;padding-bottom:2px;border-bottom:1.5px solid transparent;transition:.2s;
+  }
+  nav.main a:hover,nav.main a.active{color:var(--ink);border-color:var(--accent);}
+
+  /* ---------- Hero ---------- */
+  .hero{padding:88px 0 72px;border-bottom:1px solid var(--line);}
+  .hero-grid{display:grid;grid-template-columns:1.5fr 1fr;gap:64px;align-items:center;}
+  .eyebrow{
+    text-transform:uppercase;letter-spacing:0.18em;font-size:12.5px;font-weight:600;
+    color:var(--accent);margin:0 0 22px;
+  }
+  .hero h1{font-size:clamp(40px,6vw,68px);margin:0 0 26px;}
+  .hero .lede{font-size:20px;color:var(--muted);max-width:36ch;margin:0 0 32px;}
+  .hero .lede strong{color:var(--ink);font-weight:600;}
+  .cta-row{display:flex;gap:16px;flex-wrap:wrap;}
+  .btn{
+    display:inline-block;padding:12px 22px;border-radius:2px;font-size:14px;font-weight:600;
+    letter-spacing:0.02em;transition:.2s;
+  }
+  .btn-primary{background:var(--accent);color:#fff;}
+  .btn-primary:hover{background:var(--accent-soft);color:#fff;}
+  .btn-ghost{border:1px solid var(--line);color:var(--ink);}
+  .btn-ghost:hover{border-color:var(--accent);color:var(--accent);}
+
+  /* portrait */
+  .portrait{
+    position:relative;aspect-ratio:4/4.4;border-radius:3px;overflow:hidden;
+    border:1px solid var(--line);background:var(--paper-2);
+  }
+  .portrait img{
+    width:100%;height:100%;object-fit:cover;object-position:center 20%;display:block;
+  }
+
+  /* ---------- Section shared ---------- */
+  section{padding:76px 0;}
+  .section-head{max-width:60ch;margin-bottom:48px;}
+  .section-head .eyebrow{margin-bottom:14px;}
+  .section-head h2{font-size:clamp(28px,3.6vw,40px);margin:0;}
+
+  /* ---------- Research themes ---------- */
+  .themes{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;background:var(--line);border:1px solid var(--line);}
+  .theme{background:var(--paper);padding:36px 32px;}
+  .theme .num{font-family:"Fraunces",serif;font-size:15px;color:var(--accent);letter-spacing:0.1em;}
+  .theme h3{font-size:23px;margin:14px 0 12px;}
+  .theme p{color:var(--muted);font-size:16px;margin:0;}
+
+  /* ---------- Selected work ---------- */
+  .work{background:var(--paper-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
+  .work-list{display:flex;flex-direction:column;}
+  .work-item{
+    display:grid;grid-template-columns:auto 1fr auto;gap:24px;align-items:baseline;
+    padding:22px 0;border-bottom:1px solid var(--line);
+  }
+  .work-item:last-child{border-bottom:none;}
+  .work-item .yr{font-family:"Fraunces",serif;color:var(--accent);font-size:16px;min-width:48px;}
+  .work-item .ttl{font-size:18px;color:var(--ink);font-weight:500;}
+  .work-item .jrnl{color:var(--muted);font-size:14.5px;font-style:italic;white-space:nowrap;}
+  .work-more{margin-top:34px;}
+
+  /* ---------- Footer ---------- */
+  footer.site{background:var(--ink);color:#cfd2d8;padding:64px 0 40px;}
+  footer .f-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:40px;}
+  footer h4{color:#fff;font-family:"Fraunces",serif;font-weight:500;font-size:20px;margin:0 0 8px;}
+  footer p{color:#9aa0ab;font-size:15px;margin:0 0 6px;max-width:34ch;}
+  footer a{color:#cfd2d8;}
+  footer a:hover{color:#fff;}
+  footer .f-links{display:flex;flex-direction:column;gap:8px;font-size:15px;}
+  footer .f-links .lbl{text-transform:uppercase;letter-spacing:0.12em;font-size:11.5px;color:#767c88;margin-bottom:4px;}
+  .colophon{border-top:1px solid #2c2f36;margin-top:48px;padding-top:22px;font-size:13px;color:#767c88;}
+
+  @media(max-width:860px){
+    .hero-grid{grid-template-columns:1fr;gap:40px;}
+    .portrait{max-width:320px;}
+    .themes{grid-template-columns:1fr;}
+    footer .f-grid{grid-template-columns:1fr;gap:28px;}
+    .work-item{grid-template-columns:auto 1fr;}
+    .work-item .jrnl{grid-column:2;white-space:normal;}
+  }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="masthead">
+    <div class="brand">Sylvain <span>Catherine</span></div>
+    <nav class="main">
+      <a href="index.html" class="active">Home</a>
+      <a href="working-papers.html">Working Papers</a>
+      <a href="publications.html">Publications</a>
+      <a href="media.html">Media</a>
+      <a href="https://www.dropbox.com/s/u1otvs0z51hktkp/CV.pdf?dl=0" target="_blank" rel="noopener">CV</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="wrap">
+      <div class="hero-grid">
+        <div>
+          <p class="eyebrow">The Wharton School · University of Pennsylvania</p>
+          <h1>Economist &amp; Associate Professor of Finance.</h1>
+          <p class="lede">I study <strong>household risk-taking</strong>, the role of <strong>public policy</strong>, and their implications for <strong>wealth inequality</strong>.</p>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="publications.html">Read the research</a>
+            <a class="btn btn-ghost" href="https://www.dropbox.com/s/u1otvs0z51hktkp/CV.pdf?dl=0" target="_blank" rel="noopener">Download CV</a>
+          </div>
+        </div>
+        <div class="portrait">
+          <img src="https://sylvaincatherine.net/wp-content/uploads/2014/10/sylvain-4606-copie.png" alt="Sylvain Catherine">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Research</p>
+        <h2>Three questions at the center of my work</h2>
+      </div>
+      <div class="themes">
+        <div class="theme">
+          <div class="num">01</div>
+          <h3>Household risk-taking</h3>
+          <p>Why households avoid the stock market despite its historical returns, yet take on the greater risk of starting a business.</p>
+        </div>
+        <div class="theme">
+          <div class="num">02</div>
+          <h3>The role of public policy</h3>
+          <p>Government programs as household assets — pensions, medical services — and as liabilities, such as student debt.</p>
+        </div>
+        <div class="theme">
+          <div class="num">03</div>
+          <h3>Implications for inequality</h3>
+          <p>How portfolio composition and the inclusion of Social Security benefits reshape what we measure as wealth inequality.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="work">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Selected publications</p>
+        <h2>Recent work</h2>
+      </div>
+      <div class="work-list">
+        <div class="work-item">
+          <div class="yr">2026</div>
+          <div class="ttl">A Dynamic Model of the Racial Wealth Gap</div>
+          <div class="jrnl">Review of Financial Studies</div>
+        </div>
+        <div class="work-item">
+          <div class="yr">2025</div>
+          <div class="ttl">Social Security and Trends in Wealth Inequality</div>
+          <div class="jrnl">Journal of Finance</div>
+        </div>
+        <div class="work-item">
+          <div class="yr">2024</div>
+          <div class="ttl">Countercyclical Income Risk and Portfolio Choices: Evidence from Sweden</div>
+          <div class="jrnl">Journal of Finance</div>
+        </div>
+        <div class="work-item">
+          <div class="yr">2022</div>
+          <div class="ttl">Keeping Options Open: What Motivates Entrepreneurs?</div>
+          <div class="jrnl">Journal of Financial Economics</div>
+        </div>
+      </div>
+      <div class="work-more">
+        <a class="btn btn-ghost" href="publications.html">All publications →</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <h4>Sylvain Catherine</h4>
+        <p>Associate Professor of Finance, The Wharton School, University of Pennsylvania.</p>
+      </div>
+      <div class="f-links">
+        <span class="lbl">Site</span>
+        <a href="working-papers.html">Working Papers</a>
+        <a href="publications.html">Publications</a>
+        <a href="media.html">Media</a>
+        <a href="https://www.dropbox.com/s/u1otvs0z51hktkp/CV.pdf?dl=0" target="_blank" rel="noopener">CV (PDF)</a>
+      </div>
+      <div class="f-links">
+        <span class="lbl">Contact</span>
+        <a href="#">Email (add address)</a>
+        <a href="#">Google Scholar</a>
+        <a href="#">SSRN</a>
+      </div>
+    </div>
+    <div class="colophon">© 2026 Sylvain Catherine · Draft design for review</div>
+  </div>
+</footer>
+
+</body>
+</html>
