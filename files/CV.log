@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.7.5)  8 AUG 2026 10:58
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.7.5)  8 AUG 2026 15:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -472,9 +472,7 @@ LaTeX Font Info:    Font shape `T1/pplj/m/sl' in size <10> not available
 
 [3]
 
-[4]
-
-[5] (CV.aux)
+[4] (CV.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-04-14>
@@ -483,11 +481,11 @@ Package rerunfilecheck Info: File `CV.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 10378 strings out of 469941
- 161591 string characters out of 5468463
+ 10374 strings out of 469941
+ 161567 string characters out of 5468463
  564460 words of memory out of 5000000
  37018 multiletter control sequences out of 15000+600000
- 662989 words of font info for 94 fonts, out of 8000000 for 9000
+ 661533 words of font info for 91 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,15n,79p,1234b,513s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/Windows/AppData/Local/Programs/MiKTeX/fonts/type1/public/fpl/fplrc8
@@ -498,9 +496,9 @@ m-super/sftt1000.pfb><C:/Users/Windows/AppData/Local/Programs/MiKTeX/fonts/type
 /type1/urw/palatino/uplbi8a.pfb><C:/Users/Windows/AppData/Local/Programs/MiKTeX
 /fonts/type1/urw/palatino/uplr8a.pfb><C:/Users/Windows/AppData/Local/Programs/M
 iKTeX/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on CV.pdf (5 pages, 147632 bytes).
+Output written on CV.pdf (4 pages, 144589 bytes).
 PDF statistics:
- 100 PDF objects out of 1000 (max. 8388607)
- 21 named destinations out of 1000 (max. 500000)
+ 96 PDF objects out of 1000 (max. 8388607)
+ 20 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
